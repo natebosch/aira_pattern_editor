@@ -298,9 +298,6 @@ class _SequencerGridState extends State<SequencerGrid> {
                         onTap: () {
                           _handleStepClick(instrument, displayStep);
                         },
-                        onDoubleTap: () {
-                          // Double-click behavior removed
-                        },
 
                         child: MouseRegion(
                           cursor: _cursorForCell(instrument, stepData),
