@@ -3,6 +3,10 @@
 A Flutter web app that can read and edit rhythm pattern backup files from the
 aira compact T-8.
 
+See the [manual instructions for backup and restore][manual-backup].
+
+[manual-backup]: https://static.roland.com/manuals/T-8_manual_v102/eng/28312320.html
+
 ## Controls
 
 In normal mode (neither "Prob" or "Vel" buttons are enabled)
