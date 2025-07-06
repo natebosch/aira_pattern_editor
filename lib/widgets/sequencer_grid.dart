@@ -551,6 +551,20 @@ class _SequencerGridState extends State<SequencerGrid> {
                 ),
               ),
             ),
+            const Spacer(),
+            // Help text
+            Text(
+              _isProbabilityMode
+                  ? 'Click to open probability dialog. Scroll wheel changes step probability.'
+                  : _isVelocityMode
+                  ? 'Click to open velocity dialog. Scroll wheel changes velocity.'
+                  : 'Click to toggle steps. Scroll wheel changes sub step repeat.',
+              style: TextStyle(
+                fontSize: 12,
+                color: Colors.grey.shade600,
+                fontStyle: FontStyle.italic,
+              ),
+            ),
           ],
         ),
       ],
