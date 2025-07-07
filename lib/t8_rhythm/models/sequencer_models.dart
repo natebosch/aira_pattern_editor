@@ -183,7 +183,16 @@ class SequencerData {
       buffer.write('STEP $step\t= ');
 
       // Write each instrument in the exact order from the device
-      final instruments = const ['AC', 'BD', 'SD', 'LT', 'HT', 'CY', 'CH', 'OH'];
+      final instruments = const [
+        'AC',
+        'BD',
+        'SD',
+        'LT',
+        'HT',
+        'CY',
+        'CH',
+        'OH',
+      ];
 
       final stepParts = <String>[
         for (final instrumentCode in instruments)

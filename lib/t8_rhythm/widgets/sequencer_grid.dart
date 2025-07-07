@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
-import 'package:flutter/services.dart';
 
 import '../models/sequencer_models.dart';
 import 'probability_dialog.dart';
@@ -10,21 +9,21 @@ import 'import_dialog.dart';
 import 'export_display.dart';
 import 'shuffle_dialog.dart';
 
-class SequencerGrid extends StatefulWidget {
+class T8RhythmSequencerGrid extends StatefulWidget {
   final SequencerData data;
   final Function(SequencerData) onDataChanged;
 
-  const SequencerGrid({
+  const T8RhythmSequencerGrid({
     super.key,
     required this.data,
     required this.onDataChanged,
   });
 
   @override
-  State<SequencerGrid> createState() => _SequencerGridState();
+  State<T8RhythmSequencerGrid> createState() => _T8RhythmSequencerGridState();
 }
 
-class _SequencerGridState extends State<SequencerGrid> {
+class _T8RhythmSequencerGridState extends State<T8RhythmSequencerGrid> {
   static const List<String> instrumentLabels = [
     'BD',
     'SD',
